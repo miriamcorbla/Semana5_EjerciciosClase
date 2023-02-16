@@ -1,0 +1,23 @@
+#menu,
+#secPpal,
+#anuncios {
+    float: left;
+    border: 5px double;
+    margin-left: 0.3em; /*margen de la caja hacia fuera, hacia los amrgenes del navegador*/
+    padding: 0.3em; /*Padding es el espacio que dejo dentro de la caja. em es la anchura de la letra m*/
+}
+#menu{
+    width: 20%;
+    min-width: 10em;
+}
+#secPpal{
+    width: 40%;
+}
+#anuncios{
+    width: 30%;
+}
+#pie{
+    clear: both;
+    background-color: black;
+    color: white;
+}

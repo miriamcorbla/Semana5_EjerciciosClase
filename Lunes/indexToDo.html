@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Mini ToDo</title>
+    <style>
+        .ToDo, .ToDoMas{
+            width: fit-content;
+            height: 500px;
+            background-color: rgb(247, 241, 223);
+            margin: 5px;
+            border-style: dotted;
+            border-color:  rgb(233, 148, 91);
+        }
+        .box{
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+        }
+        .h3{
+            text-align: center;
+            text-decoration: underline;
+        }
+        .ToDo{
+            float: left; 
+        }
+        .ToDoMas{
+            float: right;
+        }
+        .contenido{
+            width: 300px;
+            height: 300px;
+            background-color: rgb(250, 248, 241);
+            margin: auto;
+        }
+        footer{
+            text-align: center;
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            width: 100%;
+            border-style: solid;
+            border-color: rgb(245, 193, 80);
+            background-color: rgb(255, 226, 163);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="ToDo">
+            <h3 class="h3">Tareas pendientes:</h3>
+            <div class="contenido">
+                <ul contenteditable="true">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ToDoMas">
+            <h3 class="h3">Enlaces de interés:</h3>
+            <div class="contenido">
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/">Google</a>
+                    </li>
+                    <li>
+                        <a href="https://www.outlook.com/">Outlook</a>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+    </div>
+    <footer>
+        Pie de página
+    </footer>
+    
+</body>
+</html>

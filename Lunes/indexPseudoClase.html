@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>Pseudoclases en acción</title>
+    <style>
+        .h1 {
+            text-shadow: 5px 4px 2px rgba(97, 95, 95, 0.6);
+        }
+
+        .h5 {
+            margin-left: 5%;
+        }
+
+        body {
+            background: rgb(190, 255, 202);
+            background: linear-gradient(90deg, rgba(190, 255, 202, 1) 0%, rgba(41, 121, 9, 0.885766806722689) 72%);
+            height: 100%;
+        }
+
+        .Form1 {
+            width: 800px;
+            height: fit-content;
+            background-color: rgb(224, 224, 224);
+            margin: 5px;
+            box-shadow: inset 8px 8px 24px -5px rgba(0, 0, 0, 0.75);
+            border-radius: 6px 8px;
+        }
+
+        .contenido {
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+        }
+        label.dir{
+            display: inline-block;
+            text-align: right;
+            width: 12em;
+        }
+        input{
+            border-color: blue;
+            border-style: dotted;
+        }
+        input[required] {
+            border-color: red;
+            border-style: dotted;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1">Las pseudo clases en acción</h1>
+    <nav>
+        <button>Menu 1</button> <button>Menu 2</button>
+    </nav>
+    <div class="cls">
+
+        <div class="Form1">
+            <form>
+                <div class="direccion">
+                    <h5 class="h5">Direccion</h5>
+                    <div class="contenido">
+                        <fieldset>
+                            <label class="dir" for="nombre">Nombre Cliente:</label>
+                            <input type="text" name="nombre" placeholder="Introuzca su nombre" required>
+                            <br>
+                            <label class="dir" for="calle">Calle:</label>
+                            <input type="text" name="calle" placeholder="Introuzca su domicilio" required>
+                            <br>
+                            <label class="dir" for="ciudad">Ciudad:</label>
+                            <input type="text" name="ciudad">
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="genero">
+                    <h5 class="h5">Sexo</h5>
+                    <div class="contenido">
+                        <fieldset>
+                            <input type="radio" name="genero" value="Masculino">
+                            <label class="gen" for="Masculino">Masculino</label>
+                            <br>
+                            <input type="radio" name="genero" value="Femenino">
+                            <label class="gen" for="Femenino">Femenino</label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="aficiones">
+                    <h5 class="h5">Aficiones:</h5>
+                    <div class="contenido">
+                        <fieldset>
+                            <input type="checkbox" value="Futbol">
+                            <label class="afi" for="Futbol">Fútbol</label>
+                            <br>
+                            <input type="checkbox" value="Toros">
+                            <label class="afi" for="Toros">Toros</label>
+                            <br>
+                            <input type="checkbox" value="Ciclismo">
+                            <label class="afi" for="Ciclismo">Ciclismo</label>
+                        </fieldset>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="anuncios">
+        Anuncios publicitarios
+    </div>
+    <div class="footer">
+        Pie de página
+    </div>
+
+
+</body>
+
+</html>
